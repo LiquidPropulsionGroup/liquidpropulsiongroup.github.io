@@ -48,12 +48,13 @@ export default function Layout({ children }) {
         <ul>
           {ContactData.map((data, idx) => {
             // Icons need to be changed here
+            var icon;
             if (data.name === 'Email') {
-              var icon = <FaEnvelope />;
+              icon = <FaEnvelope />;
             } else if (data.name === 'Github') {
-              var icon = <FaGithub />;
+              icon = <FaGithub />;
             } else if (data.name === 'Discord') {
-              var icon = <FaDiscord />
+              icon = <FaDiscord />
             }
             return <IconLink to={data.link}>{icon}</IconLink>
           })}

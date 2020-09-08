@@ -2,7 +2,6 @@ import IndexData from '../content/index.yaml'
 import Layout from "../components/layout"
 import React from "react"
 import RocketImg from '../images/rocket.svg'
-import FlexLayout from '../components/flexlayout'
 import SEO from '../components/seo'
 import Styles from '../styles/index.module.css'
 
