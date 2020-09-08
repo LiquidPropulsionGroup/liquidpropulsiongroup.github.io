@@ -2,5 +2,5 @@
   content: We are rocket club we make rocket blah blah wooosh
   image: 'earth.svg'
 - title: Join Us!
-  content: We’re always looking for new memers! Check out the recruitment page for more info.
+  content: We’re always looking for new memers! Check out the <a href="/join">recruitment page</a> for more info.
   image: 'parts.svg'

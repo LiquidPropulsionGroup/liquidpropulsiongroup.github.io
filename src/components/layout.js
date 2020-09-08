@@ -32,7 +32,7 @@ export default function Layout({ children }) {
           </FlexLayout>
           <ul>
             {PageData.map((data, idx) => (
-              <ListLink to={data.path}>{data.title}</ListLink>
+              <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
             ))}
           </ul>
         </FlexLayout>
@@ -56,7 +56,7 @@ export default function Layout({ children }) {
             } else if (data.name === 'Discord') {
               icon = <FaDiscord />
             }
-            return <IconLink to={data.link}>{icon}</IconLink>
+            return <IconLink to={data.link} key={`icon_link_${idx}`}>{icon}</IconLink>
           })}
         </ul>
       </footer>

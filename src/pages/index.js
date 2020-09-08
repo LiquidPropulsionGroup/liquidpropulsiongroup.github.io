@@ -16,20 +16,20 @@ export default function Home() {
       </div>
       <div>
         {IndexData.map((data, idx) => (
-          <div key={`section_${idx}`} className={Styles.section}>
+          <div key={`section_${idx}`} className="section">
             {idx % 2 === 0 ? (
               <>
                 <img src={require(`../images/${data.image}`)} alt='' />
-                <div className={Styles.sectionContent}>
+                <div className="section-content">
                   <h2>{data.title}</h2>
-                  <p>{data.content}</p>
+                  <p dangerouslySetInnerHTML={{ __html: data.content }}></p>
                 </div>
               </>
             ) : (
                 <>
-                  <div className={Styles.sectionContent}>
+                  <div className="section-content">
                     <h2>{data.title}</h2>
-                    <p>{data.content}</p>
+                    <p dangerouslySetInnerHTML={{ __html: data.content }}></p>
                   </div>
                   <img src={require(`../images/${data.image}`)} alt='' />
                 </>

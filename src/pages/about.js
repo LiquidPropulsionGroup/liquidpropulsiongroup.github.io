@@ -2,16 +2,59 @@ import React from "react"
 import AboutData from "../content/about.yaml"
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import Styles from '../styles/about.module.css'
+import OfficerData from '../content/officers.yaml'
+import MemberData from '../content/members.yaml'
 
 const About = () => (
   <Layout>
     <SEO pageTitle='About' />
-    {AboutData.map((data, index) => (
-      <div key={`section_${index}`}>
-        <h1>{data.title}</h1>
-        <p>{data.content}</p>
+    <h1>About Us</h1>
+    <div>
+      {AboutData.map((data, idx) => (
+        <div key={`section_${idx}`} className="section">
+          {idx % 2 === 0 ? (
+            <>
+              <img src={require(`../images/${data.image}`)} alt='' />
+              <div className="section-content">
+                <h2>{data.title}</h2>
+                <p>{data.content}</p>
+              </div>
+            </>
+          ) : (
+              <>
+                <div className="section-content">
+                  <h2>{data.title}</h2>
+                  <p>{data.content}</p>
+                </div>
+                <img src={require(`../images/${data.image}`)} alt='' />
+              </>
+            )}
+        </div>
+      ))}
+      <div className={`${Styles.peopleSection} section`}>
+        <h2>Officers</h2>
+        <div className={Styles.peopleContainer}>
+          {OfficerData.map((data, idx) => (
+            <div key={`officer_${idx}`} className={Styles.people}>
+              <h4>{data.name}</h4>
+              <h5>{data.position}</h5>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
+      <div className={`${Styles.peopleSection} section`}>
+        <h2>Members</h2>
+        <div className={Styles.peopleContainer}>
+          {MemberData.sort((a, b) => a.team > b.team).map((data, idx) => (
+            <div key={`member_${idx}`} className={Styles.people}>
+              <h4>{data.name}</h4>
+              <h5>{data.team}</h5>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 export default About
