@@ -1,22 +1,43 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import IndexData from '../content/index.yaml'
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import React from "react"
+import RocketImg from '../images/rocket.svg'
+import FlexLayout from '../components/flexlayout'
+import SEO from '../components/seo'
+import Styles from '../styles/index.module.css'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+export default function Home() {
 
-export default IndexPage
+  return (
+    <Layout>
+      <SEO />
+      <div className={Styles.landing}>
+        <h1>Making Rocket Engines</h1>
+        <img src={RocketImg} alt='' />
+      </div>
+      <div>
+        {IndexData.map((data, idx) => (
+          <div key={`section_${idx}`} className={Styles.section}>
+            {idx % 2 === 0 ? (
+              <>
+                <img src={require(`../images/${data.image}`)} alt='' />
+                <div className={Styles.sectionContent}>
+                  <h2>{data.title}</h2>
+                  <p>{data.content}</p>
+                </div>
+              </>
+            ) : (
+                <>
+                  <div className={Styles.sectionContent}>
+                    <h2>{data.title}</h2>
+                    <p>{data.content}</p>
+                  </div>
+                  <img src={require(`../images/${data.image}`)} alt='' />
+                </>
+              )}
+          </div>
+        ))}
+      </div>
+    </Layout>
+  )
+}

@@ -1,0 +1,6 @@
+- path: "/about"
+  title: "About"
+- path: "/join"
+  title: "Recruitment"
+- path: "/contact"
+  title: "Contact"

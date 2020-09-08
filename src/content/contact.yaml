@@ -1,0 +1,7 @@
+- name: Email
+  link: mailto:liquidpropulsiongroup@gmail.com
+  icon: FaEnvelope
+- name: Github
+  link: https://github.com/LiquidPropulsionGroup
+- name: Discord
+  link: https://discord.gg/nn7RRuq
