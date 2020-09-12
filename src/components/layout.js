@@ -34,10 +34,10 @@ export default function Layout({ children }) {
       </header>
       {children}
       <footer className={Styles.footer}>
-        <FlexLayout align='center'>
+        <div className={Styles.footerContent}>
           <img src={Logo} alt='LPG Logo' />
           Liquid Propulsion Group
-        </FlexLayout>
+        </div>
         <ContactLinks />
       </footer>
     </div>

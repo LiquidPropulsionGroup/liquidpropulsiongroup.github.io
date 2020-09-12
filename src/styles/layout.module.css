@@ -51,6 +51,13 @@
   align-items: center;
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  left: -2rem;
+  position: relative;
+}
+
 .footer img {
   width: 4rem;
   height: 4rem;
@@ -59,8 +66,4 @@
 
 .footer a {
   text-decoration: none;
-}
-
-.footer ul {
-  margin-left: 4rem;
 }

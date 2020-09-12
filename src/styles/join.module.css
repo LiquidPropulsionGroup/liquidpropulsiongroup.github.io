@@ -1,0 +1,15 @@
+.roadmap-section {
+  flex-direction: column;
+  padding-top: 10vh;
+  /* padding-bottom: 10vh; */
+  height: auto;
+}
+
+.roadmap-section .roadmap-container img {
+  margin: 5vh;
+  height: 70vh;
+}
+
+.join-bullets {
+  margin-left: 3rem;
+}

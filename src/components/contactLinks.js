@@ -17,7 +17,7 @@ export default function Layout({ showNames }) {
           icon = <FaDiscord />
         }
         return (
-          <li className={showNames ? Styles.contactLinkName : Styles.contactLinkNoName}>
+          <li className={showNames ? Styles.contactLinkName : Styles.contactLinkNoName} key={`contact-link-${idx}`}>
             <a href={data.link}>
               {icon} {showNames && data.name}
             </a>
