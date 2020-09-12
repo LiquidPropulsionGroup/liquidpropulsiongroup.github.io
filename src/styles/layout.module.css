@@ -11,14 +11,19 @@
 
 .header {
   margin: 0.5rem 0 1.5rem;
-  font-size: 1.5rem;
   font-family: 'Montserrat', serif;
+  padding: 0 1rem;
+}
+
+.header h1 {
+  margin-bottom: 0.6rem;
+  font-size: 1.7rem;
 }
 
 .header img {
   width: 6rem;
   height: 6rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
 }
 
 .header a {

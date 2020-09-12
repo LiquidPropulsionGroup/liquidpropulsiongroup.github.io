@@ -18,9 +18,11 @@ export default function Layout({ children }) {
       <header className={Styles.header}>
         <FlexLayout justify='space-between' align='center'>
           <FlexLayout align='center'>
-            <img src={Logo} alt='LPG Logo'/>
-            <Link to="/" >
-              Liquid Propulsion Group
+            <Link to="/">
+              <img src={Logo} alt='LPG Logo'/>
+            </Link>
+            <Link to="/">
+              <h1>Liquid Propulsion Group</h1>
             </Link>
           </FlexLayout>
           <ul>
@@ -34,9 +36,7 @@ export default function Layout({ children }) {
       <footer className={Styles.footer}>
         <FlexLayout align='center'>
           <img src={Logo} alt='LPG Logo' />
-          <Link to="/" >
-            Liquid Propulsion Group
-          </Link>
+          Liquid Propulsion Group
         </FlexLayout>
         <ContactLinks />
       </footer>
