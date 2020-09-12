@@ -2,16 +2,21 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Styles from '../styles/404.module.css'
 import PlutoImg from '../images/pluto.svg'
 
+// The span is sort of hacky but it's not webdev with some bs-ing ¯\_(ツ)_/¯
+// It makes the content section div an even child of Layout so it'd 
+// have the blue background. 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>404</h1>
-    <div className={Styles.nonexistent}>
+    <span /> 
+    <div className="section">
       <img src={PlutoImg} alt='pluto' />
-      <p>You're trying to visit a page that doesn't exist... big sad :( </p>
+      <div className="section-content">
+        <h2>404</h2>
+        <p>This page is no longer considered a page by the 2009 IAC... Sorry</p>
+      </div>
     </div>
   </Layout>
 )
