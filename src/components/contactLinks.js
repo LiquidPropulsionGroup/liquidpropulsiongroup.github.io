@@ -3,12 +3,6 @@ import { FaEnvelope, FaGithub, FaDiscord } from 'react-icons/fa'
 import ContactData from "../content/contact.yaml"
 import Styles from '../styles/contactLinks.module.css'
 
-const IconLink = props => (
-  <li>
-    <a href={props.to}>{props.children}</a>
-  </li>
-)
-
 export default function Layout({ showNames }) {
   return (
     <ul className={Styles.contactLinks}>

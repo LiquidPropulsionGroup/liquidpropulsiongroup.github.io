@@ -13,7 +13,7 @@ const Contact = () => (
         <h3>Questions? Feel free to contact us!</h3>
         <ContactLinks showNames={true}/>
       </div>
-      <img src={LiftImg} alt='Lift off image' />
+      <img src={LiftImg} alt='Lift off' />
     </div>
   </Layout>
 )
