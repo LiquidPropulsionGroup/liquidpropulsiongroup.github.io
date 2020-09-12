@@ -1,0 +1,24 @@
+.contact-links {
+  list-style: none;
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+.contact-link-no-name {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+}
+
+.contact-link-name a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link-name svg {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}

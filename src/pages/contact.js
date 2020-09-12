@@ -1,20 +1,19 @@
 import React from "react"
-import ContactData from "../content/contact.yaml"
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import LiftImg from '../images/lift.svg'
+import ContactLinks from '../components/contactLinks'
 
 const Contact = () => (
   <Layout>
     <SEO pageTitle='Contact' />
-    <hi>Contact Us</hi>
-    <div>
-      <ul>
-        {ContactData.map((data, index) => (
-          <li key={`contact_${index}`}>
-            <a href={data.link}>{data.name}</a>
-          </li>
-        ))}
-      </ul>
+    <h1>Contact Us</h1>
+    <div className="section">
+      <div className="section-content">
+        <h3>Questions? Feel free to contact us!</h3>
+        <ContactLinks showNames={true}/>
+      </div>
+      <img src={LiftImg} alt='Lift off image' />
     </div>
   </Layout>
 )

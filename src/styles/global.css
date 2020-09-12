@@ -585,7 +585,7 @@ pre tt:after {
   min-height: 70vh;
   height: 35rem;
   overflow: hidden;
-  padding: 0 10vw;
+  padding: 0 15vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -606,11 +606,11 @@ pre tt:after {
 }
 
 .section:nth-child(odd) img {
-  margin-right: 5vw;
+  margin: 0 5vw 0 0;
 }
 
 .section:nth-child(even) img {
-  margin-left: 5vw;
+  margin: 0 0 0 5vw;
 }
 
 @media only screen and (max-width: 480px) {

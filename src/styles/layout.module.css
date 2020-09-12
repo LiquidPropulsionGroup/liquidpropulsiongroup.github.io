@@ -5,6 +5,8 @@
 
 .layout h1 {
   text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 .header {
@@ -55,13 +57,5 @@
 }
 
 .footer ul {
-  list-style: none;
   margin-left: 4rem;
-}
-
-.footer ul li {
-  display: inline-block;
-  margin: 0 1rem 0 0;
-  font-size: 1.5rem;
-  color: #FAFAFA;
 }
