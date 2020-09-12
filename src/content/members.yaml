@@ -1,8 +1,18 @@
-- name: Person 1
-  team: Plumbing Team
-- name: Person 2
-  team: Engine Team
-- name: Person 3
-  team: Controls Team
-- name: Person 4
-  team: Operations Team
+- name: Diego Marquez
+  team: Propellant System
+- name: Anthony Lee
+  team: Propellant System
+- name: Enrique Carazes
+  team: Engine Assembly
+- name: Josh Ira
+  team: Engine Assembly
+- name: B.K. Evangelista
+  team: Engine Assembly
+- name: Cameron Wright
+  team: Engine Assembly
+- name: Jorge Avilez
+  team: Engine Assembly
+- name: Brian Almaguer
+  team: Controls
+- name: Jozsef Augusztiny
+  team: Controls
