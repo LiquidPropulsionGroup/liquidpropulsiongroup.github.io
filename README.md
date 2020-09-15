@@ -16,10 +16,16 @@ The package manager used is Yarn. Please use yarn and yarn only. Do not use npm 
 
 ### Install Gatsby.js
 ```shell
-$ yarn add gatsby-cli
+$ yarn global add gatsby-cli
 ```
 
 ### Install Dependencies
+Go into the repository, wherever you cloned it.
+
+```shell
+$ cd liquidpropulsiongroup.github.io/ 
+```
+
 ```shell
 $ yarn install
 ```
