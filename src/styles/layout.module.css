@@ -43,7 +43,7 @@
 }
 
 .footer {
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 1rem;
   font-size: 1.2rem;
   font-family: 'Montserrat', serif;
   display: flex;
@@ -64,6 +64,18 @@
   margin: 0 1rem;
 }
 
-.footer a {
+.creator {
+  font-size: 0.8rem;
+  position: relative;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+.creator p {
+  margin: 0;
+}
+
+.creator a {
   text-decoration: none;
+  position: relative;
 }

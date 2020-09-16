@@ -39,6 +39,10 @@ export default function Layout({ children }) {
           Liquid Propulsion Group
         </div>
         <ContactLinks />
+
+        <div className={Styles.creator}>
+          <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
+        </div>
       </footer>
     </div>
   )
