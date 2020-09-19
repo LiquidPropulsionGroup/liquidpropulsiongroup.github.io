@@ -3,6 +3,7 @@ import JoinData from "../content/join.yaml"
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import RoadmapImg from '../images/roadmap.svg';
+import ReactMarkdown from "react-markdown"
 import Styles from '../styles/join.module.css'
 
 const Join = () => {
@@ -42,28 +43,14 @@ const Join = () => {
                 }
                 <div className="section-content">
                   <h2>{data.title}</h2>
-                  <p>{data.description}</p>
-                  {data.bullets &&
-                    <ul className={Styles.joinBullets}>
-                      {data.bullets.map((data, idx) => (
-                        <li key={`section-content-list-${idx}`}>{data}</li>
-                      ))}
-                    </ul>
-                  }
+                  <ReactMarkdown source={data.content} />
                 </div>
               </>
             ) : (
                 <>
                   <div className="section-content">
                     <h2>{data.title}</h2>
-                    <p>{data.description}</p>
-                    {data.bullets &&
-                      <ul className={Styles.joinBullets}>
-                        {data.bullets.map((data, idx) => (
-                          <li key={`section-content-list-${idx}`}>{data}</li>
-                        ))}
-                      </ul>
-                    }
+                    <ReactMarkdown source={data.content} />
                   </div>
                   {data.image &&
                     <img src={require(`../images/${data.image}`)} alt='' />

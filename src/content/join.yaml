@@ -1,14 +1,12 @@
 - title: Why?
-  description: asdkfjalk jaklsdf akjdfka alskdfja kjaklsdfj alskdjf afjlkasdjflkas flaksdjf;wil f;alsdfk asjkf
-  bullets:
-    - Get practical experience
-    - Learn how to apply engineering concepts
-    - Learn the science behind rocket engines
+  content: "alksdfalsk jalskdfjals;dkfalskdfdkk dskdkfsld ksddk ksdk dkdk lasdflkasdk sldfdslsdfkam,w sdk kdlsl\n
+    - Get practical experience\n
+    - Learn how to apply engineering concepts\n
+    - Learn the science behind rocket engines\n"
   image: meteors.svg
 - title: What can you expect?
-  description: alskdjfask fakfalkfklajlkajdkfja;dfja;ksdjf a;;akdfkadjfs droqkjfahsfhasd jfajsf ;lkjw eifjlskdf m,dcv
-  bullets:
-    - build rockets
-    - fire rockets
-    - tada!
+  content: "alskdjfask fakfalkfklajlkajdkfja;dfja;ksdjf a;;akdfkadjfs droqkjfahsfhasd jfajsf ;lkjw eifjlskdf m,dcv\n
+    - build rockets\n
+    - fire rockets\n
+    - tada!\n"
   image: cogs.svg

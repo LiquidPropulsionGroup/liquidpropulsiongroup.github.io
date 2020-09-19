@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Styles from '../styles/about.module.css'
 import OfficerData from '../content/officers.yaml'
 import MemberData from '../content/members.yaml'
+import ReactMarkdown from "react-markdown"
 
 const About = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -41,14 +42,14 @@ const About = () => {
                 <img src={require(`../images/${data.image}`)} alt='' />
                 <div className="section-content">
                   <h2>{data.title}</h2>
-                  <p>{data.content}</p>
+                  <ReactMarkdown source={data.content} />
                 </div>
               </>
             ) : (
                 <>
                   <div className="section-content">
                     <h2>{data.title}</h2>
-                    <p>{data.content}</p>
+                    <ReactMarkdown source={data.content} />
                   </div>
                   <img src={require(`../images/${data.image}`)} alt='' />
                 </>

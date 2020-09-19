@@ -614,6 +614,10 @@ pre tt:after {
   margin: 0 0 0 10vw;
 }
 
+.section ul {
+  margin-left: 3rem;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
@@ -644,6 +648,10 @@ pre tt:after {
 
   .section h3 {
     font-size: 1rem;
+  }
+
+  .section ul {
+    align-self: flex-start;
   }
 }
 

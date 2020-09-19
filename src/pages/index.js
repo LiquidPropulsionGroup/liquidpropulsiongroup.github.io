@@ -5,6 +5,7 @@ import RocketImg from '../images/rocket.svg'
 import RocketSmallImg from '../images/rocket-small.svg'
 import SEO from '../components/seo'
 import Styles from '../styles/index.module.css'
+import ReactMarkdown from "react-markdown"
 
 export default function Home() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -51,14 +52,14 @@ export default function Home() {
                 <img src={require(`../images/${data.image}`)} alt='' />
                 <div className="section-content">
                   <h2>{data.title}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: data.content }}></p>
+                  <ReactMarkdown source={data.content} />
                 </div>
               </>
             ) : (
                 <>
                   <div className="section-content">
                     <h2>{data.title}</h2>
-                    <p dangerouslySetInnerHTML={{ __html: data.content }}></p>
+                    <ReactMarkdown source={data.content} />
                   </div>
                   <img src={require(`../images/${data.image}`)} alt='' />
                 </>
