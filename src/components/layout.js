@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             </footer>
           </div>
         </Orientation>
-        <Orientation orientation='landscape'>
+        <Orientation orientation='landscape' alwaysRender={false}>
           <div className={Styles.layout}>
             <header className={Styles.header}>
               <FlexLayout justify='space-between' align='center'>
