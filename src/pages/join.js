@@ -12,7 +12,7 @@ const Join = () => (
     <div>
       {JoinData.map((data, idx) => (
         <div key={`section_${idx}`} className="section">
-          {idx % 2 === 0 ? (
+          {idx % 2 === 0 || window.innerWidth < 1024 ? (
             <>
               {data.image &&
                 <img src={require(`../images/${data.image}`)} alt='' />

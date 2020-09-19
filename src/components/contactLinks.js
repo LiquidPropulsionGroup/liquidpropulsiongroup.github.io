@@ -31,8 +31,8 @@ export default function Layout({ showNames }) {
           icon = <FaDiscord />
         }
         return (
-          <li className={showNames ? Styles.contactLinkName : Styles.contactLinkNoName} key={`contact-link-${idx}`} onMouseOver={showNames ? wiggle : null}>
-            <a href={data.link}>
+          <li className={showNames ? Styles.contactLinkName : Styles.contactLinkNoName} key={`contact-link-${idx}`}>
+            <a href={data.link}  onMouseOver={showNames ? wiggle : null} onFocus={showNames ? wiggle : null}>
               {icon} {showNames && data.name}
             </a>
           </li>

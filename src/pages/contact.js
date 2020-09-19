@@ -10,13 +10,28 @@ const Contact = () => (
     <SEO pageTitle='Contact' />
     <h1>Contact Us</h1>
     <div className="section">
-      <div className="section-content">
-        <h3>Questions? Feel free to contact us!</h3>
-        <div className={Styles.contactLinksWrapper}>
-          <ContactLinks showNames={true}/>
-        </div>
-      </div>
-      <img src={LiftImg} alt='Lift off' />
+      {window.innerWidth < 1280 ? (
+        <>
+          <img src={LiftImg} alt='Lift off' />
+          <div className="section-content">
+
+            <h3>Questions? Feel free to contact us!</h3>
+            <div className={Styles.contactLinksWrapper}>
+              <ContactLinks showNames={true} />
+            </div>
+          </div>
+        </>
+      ) : (
+          <>
+            <div className="section-content">
+              <h3>Questions? Feel free to contact us!</h3>
+              <div className={Styles.contactLinksWrapper}>
+                <ContactLinks showNames={true} />
+              </div>
+            </div>
+            <img src={LiftImg} alt='Lift off' />
+          </>
+        )}
     </div>
   </Layout>
 )

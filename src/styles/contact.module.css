@@ -1,3 +1,9 @@
 .contact-links-wrapper {
   width: max-content;
 }
+
+@media only screen and (max-width: 767px) {
+  .contact-links-wrapper {
+    align-self: flex-start;
+  }
+}

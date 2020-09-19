@@ -16,8 +16,7 @@
 }
 
 .header h1 {
-  margin-bottom: 0.6rem;
-  font-size: 1.7rem;
+  font-size: 1.65rem;
 }
 
 .header img {
@@ -28,11 +27,13 @@
 
 .header a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .header ul {
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   float: right;
   text-align: right;
 }
@@ -79,3 +80,74 @@
   text-decoration: none;
   position: relative;
 }
+
+@media only screen and (max-width: 767px) {
+  .header h1 {
+    display: none;
+  }
+
+  .header img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .header ul li {
+    margin: 0.2rem 0.5rem 0 0;
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    left: 0;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .footer img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .layout h1 {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .layout .header h1 {
+    font-size: 1.2rem;
+    margin: 1.6rem 0;
+  }
+
+  .layout .header img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .layout .header ul li {
+    margin: 0 1rem 0 0;
+  }
+  
+  .layout h1 {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .layout .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .layout .header img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+

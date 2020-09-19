@@ -13,7 +13,7 @@ const About = () => (
     <div>
       {AboutData.map((data, idx) => (
         <div key={`section_${idx}`} className="section">
-          {idx % 2 === 0 ? (
+          {idx % 2 === 0 || window.innerWidth < 1024 ? (
             <>
               <img src={require(`../images/${data.image}`)} alt='' />
               <div className="section-content">

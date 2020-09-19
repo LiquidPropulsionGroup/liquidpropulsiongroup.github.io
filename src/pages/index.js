@@ -2,6 +2,7 @@ import IndexData from '../content/index.yaml'
 import Layout from "../components/layout"
 import React from "react"
 import RocketImg from '../images/rocket.svg'
+import RocketSmallImg from '../images/rocket-small.svg'
 import SEO from '../components/seo'
 import Styles from '../styles/index.module.css'
 
@@ -11,13 +12,20 @@ export default function Home() {
     <Layout>
       <SEO />
       <div className={Styles.landing}>
-        <h1>Making Rocket Engines</h1>
-        <img src={RocketImg} alt='' />
+        {window.innerWidth < 768 ? (
+          <>
+            <h1>Liquid Propulsion Group</h1>
+            <h2>Making Rocket Engines</h2>
+          </>
+        ) : (
+            <h1>Making Rocket Engines</h1>
+          )}
+        <img src={window.innerWidth < 1024 ? RocketSmallImg : RocketImg} alt='' />
       </div>
       <div>
         {IndexData.map((data, idx) => (
           <div key={`section_${idx}`} className="section">
-            {idx % 2 === 0 ? (
+            {idx % 2 === 0 || window.innerWidth < 1024  ? (
               <>
                 <img src={require(`../images/${data.image}`)} alt='' />
                 <div className="section-content">

@@ -602,7 +602,9 @@ pre tt:after {
 }
 
 .section img {
-  height: 35vh;
+  width: 30vw;
+  min-width: 25vh;
+  max-width: 35vh;
 }
 
 .section:nth-child(odd) img {
@@ -616,5 +618,77 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 40px 75px;
+    position: relative;
+    height: 90vh;
+    min-height: max-content;
+  }
+
+  .section-content {
+    width: auto;
+    font-size: 0.9rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section img {
+    margin: 0 0 20% !important;
+    align-self: center;
+  }
+
+  .section h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    padding: 80px;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+    min-height: max-content;
+  }
+
+  .section-content {
+    width: auto;
+    font-size: 0.9rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section img {
+    margin: 0 0 15% !important;
+    width: 35vh;
+    align-self: center;
+  }
+
+  .section h3 {
+    font-size: 1.2rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .section-content {
+    padding: 0;
+  }
+
+  .section h3 {
+    font-size: 1.2rem;
   }
 }
