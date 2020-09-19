@@ -81,6 +81,32 @@
   position: relative;
 }
 
+.rotate {
+  display: flex;
+  width: 100vw;
+  min-height: 65vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10vw;
+}
+
+.rotate p {
+  padding: 0;
+  margin: 0;
+}
+
+.rotate p:last-child {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.rotate img {
+  width: 15vw;
+  margin: 5%;
+}
+
 @media only screen and (max-width: 767px) {
   .header h1 {
     display: none;
