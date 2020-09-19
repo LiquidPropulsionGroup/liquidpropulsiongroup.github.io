@@ -597,7 +597,6 @@ pre tt:after {
 }
 
 .section-content {
-  padding-bottom: 5rem;
   width: 35vw;
 }
 
@@ -608,11 +607,11 @@ pre tt:after {
 }
 
 .section:nth-child(odd) img {
-  margin: 0 5vw 0 0;
+  margin: 0 10vw 0 0;
 }
 
 .section:nth-child(even) img {
-  margin: 0 0 0 5vw;
+  margin: 0 0 0 10vw;
 }
 
 @media only screen and (max-width: 480px) {
@@ -634,7 +633,6 @@ pre tt:after {
   .section-content {
     width: auto;
     font-size: 0.9rem;
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
   }
@@ -665,7 +663,6 @@ pre tt:after {
   .section-content {
     width: auto;
     font-size: 0.9rem;
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -678,14 +675,13 @@ pre tt:after {
   }
 
   .section h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
-
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-  .section-content {
-    padding: 0;
+  .section {
+    padding: 0 10vw;
   }
 
   .section h3 {

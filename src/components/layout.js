@@ -19,7 +19,7 @@ export default function Layout({ children }) {
         <FlexLayout justify='space-between' align='center'>
           <FlexLayout align='center'>
             <Link to="/">
-              <img src={Logo} alt='LPG Logo'/>
+              <img src={Logo} alt='LPG Logo' />
             </Link>
             <Link to="/">
               <h1>Liquid Propulsion Group</h1>

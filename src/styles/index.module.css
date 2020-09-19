@@ -22,11 +22,20 @@
 .landing h1 {
   position: relative;
   top: calc(50% - 10rem);
-  right: 10%;
   z-index: 1;
+  background-color: #151B35;
+  padding: 1rem;
+  border-radius: 5px;
+  width: max-content;
+  left: 25%;
 }
 
 @media only screen and (max-width: 767px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
   .landing img {
     width: 100vw;
     height: auto;
@@ -34,22 +43,33 @@
 
   .landing h1 {
     font-size: 1.5rem;
-    top: calc(10% - 1.3rem);
+    top: -1.3rem;
     position: relative;
     margin-bottom: 1rem;
-    right: 50%;
-    transform: translate(50%, 0);
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .landing h2 {
     font-size: 1rem;
     text-align: center;
-    top: calc(10% - 1.5rem);
+    top: -2.5rem;
     position: relative;
+    background-color: #151B35;
+    padding: 10px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: max-content;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .landing {
+    height: 105vh;
+  }
+
   .landing img {
     width: 100vw;
     height: auto;
@@ -59,9 +79,9 @@
     top: unset;
     position: relative;
     top: 0;
-    right: 50%;
-    transform: translate(50%, 0);
     margin-top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -71,6 +91,6 @@
   }
 
   .landing h1 {
-    right: 20%;
+    left: 20%;
   }
 }

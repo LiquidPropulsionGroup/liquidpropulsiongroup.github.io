@@ -2,6 +2,11 @@
   width: max-content;
 }
 
+.contact-section img {
+  margin-left: 10vw !important;
+  margin-right: 10vw !important;
+}
+
 @media only screen and (max-width: 767px) {
   .contact-links-wrapper {
     align-self: flex-start;
