@@ -1,4 +1,4 @@
-import React, {useLayoutEffect, useState} from "react"
+import React, { useLayoutEffect, useState } from "react"
 import { Link } from "gatsby"
 import PageData from "../content/pages.yaml"
 import Styles from '../styles/layout.module.css'
@@ -31,77 +31,111 @@ export default function Layout({ children }) {
     }
   }, [width]);
 
-  return (
-    <DeviceOrientation lockOrientation={'portrait'}>
-      <Orientation orientation='portrait' alwaysRender={width >= 1024}>
-        <div className={Styles.layout}>
-          <header className={Styles.header}>
-            <FlexLayout justify='space-between' align='center'>
-              <FlexLayout align='center'>
-                <Link to="/">
-                  <img src={Logo} alt='LPG Logo' />
-                </Link>
-                <Link to="/">
-                  <h1>Liquid Propulsion Group</h1>
-                </Link>
-              </FlexLayout>
-              <ul>
-                {PageData.map((data, idx) => (
-                  <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
-                ))}
-              </ul>
+  if (width >= 1024)
+    return (
+      <div className={Styles.layout}>
+        <header className={Styles.header}>
+          <FlexLayout justify='space-between' align='center'>
+            <FlexLayout align='center'>
+              <Link to="/">
+                <img src={Logo} alt='LPG Logo' />
+              </Link>
+              <Link to="/">
+                <h1>Liquid Propulsion Group</h1>
+              </Link>
             </FlexLayout>
-          </header>
-          {children}
-          <footer className={Styles.footer}>
-            <div className={Styles.footerContent}>
-              <img src={Logo} alt='LPG Logo' />
+            <ul>
+              {PageData.map((data, idx) => (
+                <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
+              ))}
+            </ul>
+          </FlexLayout>
+        </header>
+        {children}
+        <footer className={Styles.footer}>
+          <div className={Styles.footerContent}>
+            <img src={Logo} alt='LPG Logo' />
               Liquid Propulsion Group
             </div>
-            <ContactLinks />
-            <div className={Styles.creator}>
-              <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
-            </div>
-          </footer>
-        </div>
-      </Orientation>
-      <Orientation orientation='landscape'>
-        <div className={Styles.layout}>
-          <header className={Styles.header}>
-            <FlexLayout justify='space-between' align='center'>
-              <FlexLayout align='center'>
-                <Link to="/">
-                  <img src={Logo} alt='LPG Logo' />
-                </Link>
-                <Link to="/">
-                  <h1>Liquid Propulsion Group</h1>
-                </Link>
-              </FlexLayout>
-              <ul>
-                {PageData.map((data, idx) => (
-                  <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
-                ))}
-              </ul>
-            </FlexLayout>
-          </header>
-          <div className={Styles.rotate}>
-            <img src={RotateImg} alt='' />
-            <p>Please rotate your device.</p>
-            <p>This page is best viewed in portrait orientation.</p>
-            <p>If this message doesn't disappear after you've rotated to portrait orientation, try refreshing the page.</p>
+          <ContactLinks />
+          <div className={Styles.creator}>
+            <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
           </div>
-          <footer className={Styles.footer}>
-            <div className={Styles.footerContent}>
-              <img src={Logo} alt='LPG Logo' />
+        </footer>
+      </div>
+    )
+  else
+    return (
+      <DeviceOrientation lockOrientation={'portrait'}>
+        <Orientation orientation='portrait' alwaysRender={false}>
+          <div className={Styles.layout}>
+            <header className={Styles.header}>
+              <FlexLayout justify='space-between' align='center'>
+                <FlexLayout align='center'>
+                  <Link to="/">
+                    <img src={Logo} alt='LPG Logo' />
+                  </Link>
+                  <Link to="/">
+                    <h1>Liquid Propulsion Group</h1>
+                  </Link>
+                </FlexLayout>
+                <ul>
+                  {PageData.map((data, idx) => (
+                    <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
+                  ))}
+                </ul>
+              </FlexLayout>
+            </header>
+            {children}
+            <footer className={Styles.footer}>
+              <div className={Styles.footerContent}>
+                <img src={Logo} alt='LPG Logo' />
               Liquid Propulsion Group
             </div>
-            <ContactLinks />
-            <div className={Styles.creator}>
-              <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
+              <ContactLinks />
+              <div className={Styles.creator}>
+                <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
+              </div>
+            </footer>
+          </div>
+        </Orientation>
+        <Orientation orientation='landscape'>
+          <div className={Styles.layout}>
+            <header className={Styles.header}>
+              <FlexLayout justify='space-between' align='center'>
+                <FlexLayout align='center'>
+                  <Link to="/">
+                    <img src={Logo} alt='LPG Logo' />
+                  </Link>
+                  <Link to="/">
+                    <h1>Liquid Propulsion Group</h1>
+                  </Link>
+                </FlexLayout>
+                <ul>
+                  {PageData.map((data, idx) => (
+                    <ListLink to={data.path} key={`list_link_${idx}`}>{data.title}</ListLink>
+                  ))}
+                </ul>
+              </FlexLayout>
+            </header>
+            <div className={Styles.rotate}>
+              <img src={RotateImg} alt='' />
+              <p>Please rotate your device.</p>
+              <p>This page is best viewed in portrait orientation.</p>
+              <p>If this message doesn't disappear after you've rotated to portrait orientation, try refreshing the page.</p>
             </div>
-          </footer>
-        </div>
-      </Orientation>
-    </DeviceOrientation>
-  )
+            <footer className={Styles.footer}>
+              <div className={Styles.footerContent}>
+                <img src={Logo} alt='LPG Logo' />
+              Liquid Propulsion Group
+            </div>
+              <ContactLinks />
+              <div className={Styles.creator}>
+                <p>Designed & Made by <a href={'https://ellieyhcheng.github.io/'}>Ellie Cheng</a></p>
+              </div>
+            </footer>
+          </div>
+        </Orientation>
+      </DeviceOrientation>
+    )
 }

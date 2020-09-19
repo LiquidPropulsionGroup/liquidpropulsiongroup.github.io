@@ -18,7 +18,6 @@ const About = () => {
           (width >= minWidth && window.innerWidth < minWidth) ||
           (width < minWidth && window.innerWidth >= minWidth))
       ) {
-        console.log(window.innerWidth)
         setWidth(window.innerWidth)
       }
     }
