@@ -15,7 +15,7 @@ const NotFoundPage = () => (
       <img src={PlutoImg} alt='pluto' />
       <div className="section-content">
         <h2>404</h2>
-        <p>This page is no longer considered a page by the 2009 IAC... Sorry</p>
+        <p>This page is no longer considered a page by the 2006 IAC... Sorry</p>
       </div>
     </div>
   </Layout>
