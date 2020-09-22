@@ -597,24 +597,102 @@ pre tt:after {
 }
 
 .section-content {
-  padding-bottom: 5rem;
   width: 35vw;
 }
 
 .section img {
-  height: 35vh;
+  width: 30vw;
+  min-width: 25vh;
+  max-width: 35vh;
 }
 
 .section:nth-child(odd) img {
-  margin: 0 5vw 0 0;
+  margin: 0 10vw 0 0;
 }
 
 .section:nth-child(even) img {
-  margin: 0 0 0 5vw;
+  margin: 0 0 0 10vw;
+}
+
+.section ul {
+  margin-left: 3rem;
 }
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 40px 75px;
+    position: relative;
+    height: 90vh;
+    min-height: max-content;
+  }
+
+  .section-content {
+    width: auto;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section img {
+    margin: 0 0 20% !important;
+    align-self: center;
+  }
+
+  .section h3 {
+    font-size: 1rem;
+  }
+
+  .section ul {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    padding: 80px;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+    min-height: max-content;
+  }
+
+  .section-content {
+    width: auto;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section img {
+    margin: 0 0 15% !important;
+    width: 35vh;
+    align-self: center;
+  }
+
+  .section h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .section {
+    padding: 0 10vw;
+  }
+
+  .section h3 {
+    font-size: 1.2rem;
   }
 }

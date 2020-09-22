@@ -7,8 +7,35 @@
 .roadmap-section .roadmap-container img {
   margin: 5vh;
   height: 70vh;
+  max-width: none;
+  width: auto;
 }
 
-.join-bullets {
-  margin-left: 3rem;
+@media only screen and (max-width: 767px) {
+  .roadmap-section {
+    padding-bottom: 0;
+  }
+
+  .roadmap-section .roadmap-container img {
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .roadmap-section .roadmap-container img {
+    width: 80vw;
+    height: auto;
+    max-width: none;
+    margin: 50px 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .roadmap-section .roadmap-container img {
+    width: 80vw;
+    height: auto;
+    max-width: none;
+    margin: 50px 0 !important;
+  }
 }
