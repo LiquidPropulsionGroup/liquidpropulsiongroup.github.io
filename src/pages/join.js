@@ -2,9 +2,9 @@ import React, { useLayoutEffect, useState } from "react"
 import JoinData from "../content/join.yaml"
 import SEO from '../components/seo'
 import Layout from '../components/layout'
-import RoadmapImg from '../images/roadmap.svg';
+// import RoadmapImg from '../images/roadmap.svg';
 import ReactMarkdown from "react-markdown"
-import Styles from '../styles/join.module.css'
+// import Styles from '../styles/join.module.css'
 
 const Join = () => {
   const [width, setWidth] = useState(window.innerWidth)
@@ -59,12 +59,12 @@ const Join = () => {
               )}
           </div>
         ))}
-        <div className={`${Styles.roadmapSection} section`}>
+        {/* <div className={`${Styles.roadmapSection} section`}>
           <h2>Roadmap</h2>
           <div className={Styles.roadmapContainer}>
             <img src={RoadmapImg} alt='roadmap' />
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )
