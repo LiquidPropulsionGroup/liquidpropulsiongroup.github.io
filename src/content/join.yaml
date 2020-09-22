@@ -1,14 +1,22 @@
-- title: Why?
-  description: asdkfjalk jaklsdf akjdfka alskdfja kjaklsdfj alskdjf afjlkasdjflkas flaksdjf;wil f;alsdfk asjkf
+- title: Why Join?
+  description: LPG is a unique opportunity to participate in a challenging project with a team of passionate people. We started this organization to do difficult things and become better engineers. We invite anyone that shares this philosophy to join.
   bullets:
-    - Get practical experience
-    - Learn how to apply engineering concepts
-    - Learn the science behind rocket engines
+    - Get practical experience on a goal and requirements based project. Build your resume and portfolio.
+    - Rapidly learn and apply engineering fundamentals to a complex physical system.
+    - Learn the science and designs of liquid rocket engines.
+    - Disciplines include, but are not limited to - fluids, thermodynamics, heat transfer, material science, structural design, combustion mechanics, high energy accoustics, controls system design, fluid-pressure system and component design, fabrication and process engineering, metrology and validation, mechatronics, embedded programming, web server development, etc.
   image: meteors.svg
 - title: What can you expect?
-  description: alskdjfask fakfalkfklajlkajdkfja;dfja;ksdjf a;;akdfkadjfs droqkjfahsfhasd jfajsf ;lkjw eifjlskdf m,dcv
+  description: The project is roughly split into subsystems but our members are not required to solely specialize into just one subteam. The subteams are Engine, Propellant System, and Controls. Here are some things you will be able to work on and learn about in the project. 
   bullets:
-    - build rockets
-    - fire rockets
-    - tada!
+    - Top-down CAD design of a fluid and mechanical system using Solidworks and Siemens NX.
+    - Stress, thermal, and fluid analysis using analytical and finite element methods. (NX and ANSYS) 
+    - Custom design code for rocket engine sizing utilizing supersonic flow and heat transfer fundamentals. (Python and MATLAB)
+    - Tolerance stackup and analysis, GD&T, and design for manufacturing of entire rocket engine. Fabrication of rocket engine parts. Requirements-based validation of fabricated parts.
+    - Pressure system design with electronic and mechanical safeties and redundancy.
+    - Instrumentation and metrology of a fluid-mechanical system.
+    - Safe engine static-fire procedure development and design of test stand.
+    - Build out an embedded control system to safely operate a rocket engine test stand and collect data. (Rust, Circuit Python, Arduino, I2C)
+    - Develop a webserver to control the system and serve a UI to human operator. (REST, Node.JS, etc.)
+    - And more! Define engineering goals, plan requirements, research literature, and create novel designs!
   image: cogs.svg
