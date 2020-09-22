@@ -583,9 +583,8 @@ pre tt:after {
 
 .section {
   min-height: 70vh;
-  height: 35rem;
   overflow: hidden;
-  padding: 0 15vw;
+  padding: 10vh 15vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -628,10 +627,9 @@ pre tt:after {
   .section {
     flex-direction: column;
     justify-content: center;
-    padding: 25px 40px 75px;
+    padding: 50px 40px 75px;
     position: relative;
-    height: 90vh;
-    min-height: max-content;
+    min-height: 80vh;
   }
 
   .section-content {
@@ -658,14 +656,10 @@ pre tt:after {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .section {
     padding: 80px;
-  }
-
-  .section {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    height: 90vh;
-    min-height: max-content;
+    min-height: 80vh;
   }
 
   .section-content {
@@ -689,7 +683,7 @@ pre tt:after {
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
   .section {
-    padding: 0 10vw;
+    padding: 10vh 10vw;
   }
 
   .section h3 {
