@@ -1,18 +1,27 @@
-- name: Diego Marquez
-  team: Propellant System
-- name: Anthony Lee
-  team: Propellant System
-- name: Enrique Carazes
-  team: Engine Assembly
-- name: Josh Ira
-  team: Engine Assembly
+- name: Brian Almaguer/Haro
+  team: Controls
+  link: https://github.com/BalmaBrian
 - name: B.K. Evangelista
   team: Engine Assembly
-- name: Cameron Wright
-  team: Engine Assembly
-- name: Jorge Avilez
-  team: Engine Assembly
-- name: Brian Almaguer
-  team: Controls
+  link: https://www.linkedin.com/in/bien-k-evangelista-74b6067a
 - name: Jozsef Augusztiny
   team: Controls
+  link: https://github.com/Jozufozu
+- name: Diego Marquez
+  team: Propellant System
+  link: https://www.linkedin.com/in/diego-marquez-8b284b199/
+- name: Joshua Ira
+  team: Engine Assembly
+  link: https://www.linkedin.com/in/joshua-ira-0a6946196/
+- name: Mark Crittendon
+  team: Engine Assembly
+  link: https://www.linkedin.com/in/markcrittendon/
+- name: Enrique Cazares
+  team: Engine Assembly
+  link: 
+- name: Cameron Wright
+  team: Engine Assembly
+  link: https://www.linkedin.com/in/thewrightcameron/
+- name: Ruthvik Chowdary
+  team: Controls
+  link: https://github.com/chubbychow

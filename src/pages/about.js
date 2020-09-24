@@ -17,7 +17,7 @@ const About = () => {
   useLayoutEffect(() => {
     function handleResize() {
       const DIMENSIONS = [768, 1024, 1280];
-  
+
       if (DIMENSIONS.some(
         (minWidth) =>
           (width >= minWidth && window.innerWidth < minWidth) ||
@@ -26,7 +26,7 @@ const About = () => {
         setWidth(window.innerWidth)
       }
     }
-  
+
     window.addEventListener('resize', handleResize)
 
     return () => {
@@ -65,8 +65,17 @@ const About = () => {
           <div className={Styles.peopleContainer}>
             {OfficerData.map((data, idx) => (
               <div key={`officer_${idx}`} className={Styles.people}>
-                <h4>{data.name}</h4>
-                <h5>{data.position}</h5>
+                {data.link ? (
+                  <>
+                    <a href={data.link}><h4>{data.name}</h4></a>
+                    <h5>{data.position}</h5>
+                  </>
+                ) : (
+                    <>
+                      <h4>{data.name}</h4>
+                      <h5>{data.position}</h5>
+                    </>
+                  )}
               </div>
             ))}
           </div>
@@ -76,8 +85,17 @@ const About = () => {
           <div className={Styles.peopleContainer}>
             {MemberData.sort((a, b) => a.team > b.team).map((data, idx) => (
               <div key={`member_${idx}`} className={Styles.people}>
-                <h4>{data.name}</h4>
-                <h5>{data.team}</h5>
+                {data.link ? (
+                  <>
+                    <a href={data.link}><h4>{data.name}</h4></a>
+                    <h5>{data.team}</h5>
+                  </>
+                ) : (
+                    <>
+                      <h4>{data.name}</h4>
+                      <h5>{data.team}</h5>
+                    </>
+                  )}
               </div>
             ))}
           </div>
