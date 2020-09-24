@@ -8,7 +8,11 @@ import MemberData from '../content/members.yaml'
 import ReactMarkdown from "react-markdown"
 
 const About = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(2060)
+
+  useLayoutEffect(() => (
+    setWidth(window.innerWidth)
+  ), [])
 
   useLayoutEffect(() => {
     function handleResize() {

@@ -6,7 +6,11 @@ import ContactLinks from '../components/contactLinks'
 import Styles from '../styles/contact.module.css'
 
 const Contact = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(2060)
+
+  useLayoutEffect(() => (
+    setWidth(window.innerWidth)
+  ), [])
 
   useLayoutEffect(() => {
     function handleResize() {

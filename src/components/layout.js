@@ -14,15 +14,22 @@ const ListLink = props => (
 )
 
 export default function Layout({ children }) {
-  const [dimensions, setDimentions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  })
+  const [dimensions, setDimensions] = useState({
+    height: 1460,
+    width: 2060,
+  });
+
+  useLayoutEffect(() => (
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    })
+  ), [])
 
   useLayoutEffect(() => {
     function handleResize() {
       if (Math.abs(window.innerWidth - dimensions.width) > 300 || Math.abs(window.innerHeight - dimensions.height) > 200) {
-        setDimentions({
+        setDimensions({
           height: window.innerHeight,
           width: window.innerWidth,
         })
@@ -69,7 +76,7 @@ export default function Layout({ children }) {
         </footer>
       </div>
     )
-  else if (dimensions.height > dimensions.width)
+  else if (dimensions.height >= dimensions.width)
     return (
       <div className={Styles.layout}>
         <header className={Styles.header}>

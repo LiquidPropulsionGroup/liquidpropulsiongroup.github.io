@@ -8,7 +8,11 @@ import Styles from '../styles/index.module.css'
 import ReactMarkdown from "react-markdown"
 
 export default function Home() {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(2060)
+
+  useLayoutEffect(() => (
+    setWidth(window.innerWidth)
+  ), [])
 
   useLayoutEffect(() => {
     function handleResize() {
@@ -34,7 +38,7 @@ export default function Home() {
     <Layout>
       <SEO />
       <div className={Styles.landing}>
-        {window.innerWidth < 768 ? (
+        {width < 768 ? (
           <>
             <h1>Liquid Propulsion Group</h1>
             <h2>Making Rocket Engines</h2>

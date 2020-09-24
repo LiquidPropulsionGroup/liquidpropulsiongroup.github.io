@@ -7,7 +7,11 @@ import ReactMarkdown from "react-markdown"
 // import Styles from '../styles/join.module.css'
 
 const Join = () => {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(2060)
+
+  useLayoutEffect(() => (
+    setWidth(window.innerWidth)
+  ), [])
 
   useLayoutEffect(() => {
     function handleResize() {
