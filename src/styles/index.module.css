@@ -1,8 +1,8 @@
 .landing {
   position: relative;
   width: 100vw;
-  height: 101vh;
-  padding: 5rem 0 0 0;
+  height: 80vh;
+  padding: 1rem 0 0 0;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -28,6 +28,64 @@
   border-radius: 5px;
   width: max-content;
   left: 25%;
+}
+
+.slideshow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  top: 5rem;
+  width: 100%;
+  height: calc(100% - 5rem);
+  position: absolute;
+  transition: 0.9s cubic-bezier(.4,.01,.65,1) transform, 0.1s linear opacity;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow:hidden;
+}
+
+.arrow-wrapper {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  z-index: 100;
+}
+
+.arrow {
+  width: 5rem;
+}
+
+.slide img {
+  height: 80%;
+  position: relative;
+  min-width: 0;
+}
+
+.slide p {
+  position: relative;
+  padding: 2rem 0 0;
+  text-align: center;
+  margin: 0;
+}
+
+.landing .arrow img {
+  width: 100%;
+  position: relative;
+  min-width: 0%;
+  height: 100%;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
