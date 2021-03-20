@@ -6,13 +6,13 @@ The default branch is `dev`, where all development should happen.
 The `master` branch is where the build goes and from which the site is served. Do not manually modify this.
 
 ## Installation
-If you want locally view the site or you'd like to make changes, follow these steps. Note that this README assumes you are using a bash terminal. If you're on a Mac or Linux that's just your regular terminal, you're fine. If you're on a Windows, either install the Windows Linux Subsystem ([instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)), or use the Command Line, but the commands might be different from what's here, so you figure it out yourself. If you're using the Windows Linux Subsystem, then for all the OS-specific installations, follow the instructions for Ubuntu.
+If you want locally view the site or you'd like to make changes, follow these steps. Note that this README assumes you are using a bash terminal. If you're on a Mac or Linux that's just your regular terminal, you're fine. If you're on a Windows, either install the Windows Linux Subsystem ([instructions](https://docs.microsoft.com/en-us/windows/wsl/install-win10)), or use the Command Prompt. The commands should be mostly the same, but if it doesn't work then Google it. If you're using the Windows Linux Subsystem, then for all the OS-specific installations, follow the instructions for Ubuntu. 
 
 ### Install Node.js.
 You'll need to Google this, since it varies from OS to OS, and is out of scope for this README. Or, follow the steps [here](https://www.gatsbyjs.com/tutorial/part-zero/#install-nodejs-for-your-appropriate-operating-system) in the install Node.js section.
 
 ### Install Yarn
-The package manager used is Yarn. Please use yarn and yarn only. Do not use npm or it will destroy things and you will be very frustrated. Follow the instructions [here](https://classic.yarnpkg.com/en/docs/install/) to install.
+The package manager used is Yarn. Please use yarn and yarn only. Do not use npm or it will destroy things and you will be very frustrated. Follow the instructions [here](https://classic.yarnpkg.com/en/docs/install/) to install depending on your OS.
 
 ### Install Gatsby.js
 ```shell
